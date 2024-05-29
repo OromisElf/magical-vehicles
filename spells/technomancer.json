@@ -55,7 +55,7 @@
     "min_duration": { "math": [ "summoning_proficiency_bonus_calculate(240000, 600)" ] },
     "max_duration": { "math": [ "summoning_proficiency_bonus_calculate(1440000, 600)" ] },
     "duration_increment": { "math": [ "summoning_proficiency_bonus_calculate(60000, 0.05)" ] },
-    "extend": { "learn-spells": { "summon_magic_sedan": 10, "summon_magic_van": 20 } }
+    "learn_spells": { "summon_magic_sedan": 10, "summon_magic_van": 20 }
   },
   {
     "id": "summon_magic_sedan",

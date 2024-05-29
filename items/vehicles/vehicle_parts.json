@@ -1,0 +1,26 @@
+[
+  {
+    "type": "GENERIC",
+    "id": "i4_combustion_magic",
+    "name": "magic I4 engine",
+    "symbol": "v",
+    "description": "A magically manifested combustion engine.  Despite operating entirely off of mana rather than normal fuel, it otherwise functions exactly as a conventional 1600 cc 4 cylinder combustion engine.",
+    "volume": "5 L",
+    "weight": "30 kg",
+    "color": "yellow",
+    "material": [ "steel" ],
+    "price": "16 kUSD"
+  },
+  {
+    "type": "GENERIC",
+    "id": "v6_combustion_magic",
+    "name": "magic V6 engine",
+    "symbol": "v",
+    "description": "A magically manifested combustion engine.  Despite operating entirely off of mana rather than normal fuel, it otherwise functions exactly as a conventional 2800 cc 6 cylinder combustion engine.",
+    "volume": "6 L",
+    "weight": "50 kg",
+    "color": "yellow",
+    "material": [ "steel" ],
+    "price": "12 kUSD"
+  }
+]

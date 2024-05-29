@@ -1,0 +1,11 @@
+[
+  {
+    "type": "MOD_INFO",
+    "id": "magic_vehicles",
+    "name": "Magical Vehicles",
+    "authors": [ "OromisElf" ],
+    "description": "Adds more magical vehicles. Meant as upgrades to the Mojocycle.",
+    "category": "magical",
+    "dependencies": [ "dda", "magiclysm" ]
+  }
+]

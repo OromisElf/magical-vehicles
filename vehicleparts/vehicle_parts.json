@@ -1,0 +1,54 @@
+[
+  {
+    "id": "engine_inline4_magic",
+    "copy-from": "mana_engine",
+    "type": "vehicle_part",
+    "item": "i4_combustion_magic",
+    "durability": 300,
+    "epower": "-150 W",
+    "power": "93250 W",
+    "energy_consumption": "311000 W",
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 20, 30 ] },
+      { "item": "steel_chunk", "count": [ 20, 30 ] },
+      { "item": "scrap", "count": [ 20, 30 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 2 ] ], "time": "60 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "repair": {
+        "skills": [ [ "mechanics", 3 ] ],
+        "time": "60 m",
+        "using": [ [ "repair_welding_standard", 3 ], [ "repair_welding_alloys", 1 ], [ "vehicle_wrench_2", 1 ], [ "vehicle_screw", 1 ] ]
+      }
+    },
+    "damage_reduction": { "all": 50 },
+    "extend": { "flags": [ "NO_INSTALL_HIDDEN" ] }
+  },
+  {
+    "id": "engine_v6_magic",
+    "copy-from": "mana_engine",
+    "type": "vehicle_part",
+    "item": "v6_combustion_magic",
+    "durability": 400,
+    "epower": "-200 W",
+    "power": "149200 W",
+    "energy_consumption": "497500 W",
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 30, 40 ] },
+      { "item": "steel_chunk", "count": [ 30, 40 ] },
+      { "item": "scrap", "count": [ 30, 40 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "repair": {
+        "skills": [ [ "mechanics", 4 ] ],
+        "time": "60 m",
+        "using": [ [ "repair_welding_standard", 3 ], [ "repair_welding_alloys", 2 ], [ "vehicle_wrench_2", 1 ], [ "vehicle_screw", 1 ] ]
+      }
+    },
+    "damage_reduction": { "all": 100 },
+    "extend": { "flags": [ "NO_INSTALL_HIDDEN" ] }
+  }
+]

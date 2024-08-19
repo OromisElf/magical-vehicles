@@ -1,0 +1,32 @@
+[
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_kayak",
+    "eoc_type": "EVENT",
+    "required_event": "character_casts_spell",
+    "condition": { "and": [ { "math": [ "u_spell_level('summon_magic_kayak')", "<", "0"] }, { "math": [ "u_spell_level('summon_floating_disk')", ">=", "1"] }, { "math": [ "u_spell_level('summon_magic_motorcycle')", ">=", "1"] } ] },
+    "effect": [
+      { "math": [ "u_spell_exp('summon_magic_kayak')", "++" ] }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_motorboat",
+    "eoc_type": "EVENT",
+    "required_event": "character_casts_spell",
+    "condition": { "and": [ { "math": [ "u_spell_level('summon_magic_motorboat')", "<", "0"] }, { "math": [ "u_spell_level('summon_magic_sedan')", ">=", "1"] }, { "math": [ "u_spell_level('summon_magic_rowboat')", ">=", "10"] } ] },
+    "effect": [
+      { "math": [ "u_spell_exp('summon_magic_motorboat')", "++" ] }
+    ]
+  },
+  {
+    "type": "effect_on_condition",
+    "id": "EOC_amphitruck",
+    "eoc_type": "EVENT",
+    "required_event": "character_casts_spell",
+    "condition": { "and": [ { "math": [ "u_spell_level('summon_magic_amphitruck')", "<", "0"] }, { "math": [ "u_spell_level('summon_magic_van')", ">=", "10"] }, { "math": [ "u_spell_level('summon_magic_rowboat')", ">=", "10"] } ] },
+    "effect": [
+      { "math": [ "u_spell_exp('summon_magic_amphitruck')", "++" ] }
+    ]
+  }
+]

@@ -160,10 +160,6 @@
       { "x": -4, "y": 0, "parts": [ "frame#horizontal_rear", "door_opaque#rear", "door_motor", "muffler" ] },
       { "x": -4, "y": 1, "parts": [ "frame#horizontal_rear", "door_opaque#rear", "door_motor" ] },
       { "x": -4, "y": 2, "parts": [ "frame#se", "board#se" ] }
-    ],
-    "items": [
-      { "x": 0, "y": 0, "chance": 10, "items": [ "roadmap" ] },
-      { "x": -3, "y": 0, "chance": 100, "item_groups": [ "spare_tire_kit_wide_wheel" ] }
     ]
   },
   {
@@ -236,6 +232,78 @@
       { "x": -5, "y": 1, "parts": [ "frame#cross", "cargo_space", "metal_boat_hull" ] },
       { "x": -5, "y": 2, "parts": [ "frame#cross", "cargo_space", "metal_boat_hull" ] },
       { "x": -5, "y": 3, "parts": [ "frame#se", "halfboard#se", "metal_boat_hull" ] }
+    ]
+  },
+  {
+    "type": "vehicle",
+    "id": "magic_kayak",
+    "name": "Magical Kayak",
+    "blueprint": [ [ "<O>" ] ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "xlframe#horizontal", "seat", "mana_paddles", "plastic_boat_hull" ] },
+      { "x": 1, "y": 0, "parts": [ "xlframe#horizontal", "plastic_boat_hull" ] },
+      { "x": -1, "y": 0, "parts": [ "xlframe#horizontal", "plastic_boat_hull" ] }
+    ]
+  },
+  {
+    "type": "vehicle",
+    "id": "magic_rowboat",
+    "name": "Magical Rowboat",
+    "blueprint": [
+      [ " /\\" ],
+      [ "/oo\\" ],
+      [ "|==|" ],
+      [ "|OO|" ],
+      [ "\\--/" ]
+    ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame_wood#cross", "seat_wood", "mana_paddles", "boat_board" ] },
+      { "x": 0, "y": 1, "parts": [ "frame_wood#cross", "seat_wood", "boat_board" ] },
+      { "x": 0, "y": 2, "parts": [ "frame_wood#vertical", "boat_board" ] },
+      { "x": 0, "y": -1, "parts": [ "frame_wood#vertical", "boat_board" ] },
+      { "x": -1, "y": -1, "parts": [ "frame_wood#sw", "boat_board" ] },
+      { "x": -1, "y": 0, "parts": [ "frame_wood#horizontal", "boat_board" ] },
+      { "x": -1, "y": 1, "parts": [ "frame_wood#horizontal", "boat_board" ] },
+      { "x": -1, "y": 2, "parts": [ "frame_wood#se", "boat_board" ] },
+      { "x": 1, "y": -1, "parts": [ "frame_wood#vertical", "boat_board" ] },
+      { "x": 1, "y": 0, "parts": [ "frame_wood#cross", "wooden_aisle#horizontal", "boat_board" ] },
+      { "x": 1, "y": 1, "parts": [ "frame_wood#cross", "wooden_aisle#horizontal", "boat_board" ] },
+      { "x": 1, "y": 2, "parts": [ "frame_wood#vertical", "boat_board" ] },
+      { "x": 2, "y": -1, "parts": [ "frame_wood#nw", "boat_board" ] },
+      { "x": 2, "y": 0, "parts": [ "frame_wood#cross", "wood box", "boat_board" ] },
+      { "x": 2, "y": 1, "parts": [ "frame_wood#cross", "wood box", "boat_board" ] },
+      { "x": 2, "y": 2, "parts": [ "frame_wood#ne", "boat_board" ] },
+      { "x": 3, "y": 0, "parts": [ "frame_wood#nw", "boat_board" ] },
+      { "x": 3, "y": 1, "parts": [ "frame_wood#ne", "boat_board" ] }
+    ]
+  },
+  {
+    "type": "vehicle",
+    "id": "magic_motorboat",
+    "name": "Magical Motor Boat",
+    "blueprint": [
+      [ "|--\\" ],
+      [ "|==O>" ],
+      [ "|--/ " ]
+    ],
+    "parts": [
+      { "x": 0, "y": 0, "parts": [ "frame#vertical", "metal_boat_hull" ] },
+      { "x": 1, "y": 0, "parts": [ "frame#horizontal", "metal_boat_hull" ] },
+      { "x": 2, "y": 0, "parts": [ "frame#horizontal", "metal_boat_hull" ] },
+      { "x": 3, "y": 0, "parts": [ "frame#sw", "metal_boat_hull" ] },
+      {
+        "x": 0,
+        "y": 1,
+        "parts": [ "frame#vertical", "metal_boat_hull", "engine_1cyl_large", "alternator_bicycle", "battery_motorbike" ]
+      },
+      { "x": 1, "y": 1, "parts": [ "frame#cross", "metal_boat_hull", "trunk" ] },
+      { "x": 2, "y": 1, "parts": [ "frame#cross", "metal_boat_hull" ] },
+      { "x": 3, "y": 1, "parts": [ "frame#cross", "metal_boat_hull", "seat", "seatbelt", "controls", "dashboard" ] },
+      { "x": 4, "y": 1, "parts": [ "frame#horizontal", "metal_boat_hull", "windshield" ] },
+      { "x": 0, "y": 2, "parts": [ "frame#vertical", "metal_boat_hull" ] },
+      { "x": 1, "y": 2, "parts": [ "frame#horizontal", "metal_boat_hull" ] },
+      { "x": 2, "y": 2, "parts": [ "frame#horizontal", "metal_boat_hull" ] },
+      { "x": 3, "y": 2, "parts": [ "frame#ne", "metal_boat_hull" ] }
     ]
   }
 ]

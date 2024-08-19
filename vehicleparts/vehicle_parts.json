@@ -50,5 +50,58 @@
     },
     "damage_reduction": { "all": 100 },
     "extend": { "flags": [ "NO_INSTALL_HIDDEN" ] }
+  },
+  {
+    "abstract": "engine_manual_mana",
+    "copy-from": "engine_manual",
+    "type": "vehicle_part",
+    "fuel_type": "mana",
+    "m2c": 45
+  },
+  {
+    "id": "mana_paddles",
+    "type": "vehicle_part",
+    "copy-from": "engine_manual_mana",
+    "name": { "str": "mana paddles" },
+    "durability": 50,
+    "power": "720 W",
+    "noise_factor": 8,
+    "item": "mana_paddles",
+    "folded_volume": "500 ml",
+    "requirements": {
+      "install": { "skills": [ [ "fabrication", 1 ] ], "time": "6 m" },
+      "removal": { "skills": [ [ "fabrication", 2 ] ], "time": "6 m" },
+      "repair": { "skills": [ [ "fabrication", 2 ] ], "time": "60 m" }
+    },
+    "flags": [ "ENGINE", "CONTROLS", "E_STARTS_INSTANTLY", "NO_INSTALL_HIDDEN" ],
+    "breaks_into": [ { "item": "splinter", "count": [ 2, 4 ] } ],
+    "damage_reduction": { "all": 5 },
+    "variants": [ { "symbols": "*", "symbols_broken": "#" } ]
+  },
+  {
+    "id": "engine_1cyl_large_magic",
+    "copy-from": "mana_engine",
+    "type": "vehicle_part",
+    "item": "1cyl_combustion_large_magic",
+    "durability": 150,
+    "power": "21000 W",
+    "energy_consumption": "49800 W",
+    "folded_volume": "42 L",
+    "breaks_into": [
+      { "item": "steel_lump", "count": [ 4, 8 ] },
+      { "item": "steel_chunk", "count": [ 4, 8 ] },
+      { "item": "scrap", "count": [ 4, 8 ] }
+    ],
+    "requirements": {
+      "install": { "skills": [ [ "mechanics", 3 ] ], "time": "60 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "removal": { "skills": [ [ "mechanics", 2 ] ], "time": "30 m", "using": [ [ "vehicle_wrench_2", 1 ] ] },
+      "repair": {
+        "skills": [ [ "mechanics", 4 ] ],
+        "time": "60 m",
+        "using": [ [ "repair_welding_standard", 2 ], [ "repair_welding_alloys", 1 ], [ "vehicle_wrench_2", 1 ], [ "vehicle_screw", 1 ] ]
+      }
+    },
+    "damage_reduction": { "all": 40 },
+    "extend": { "flags": [ "NO_INSTALL_HIDDEN" ] }
   }
 ]

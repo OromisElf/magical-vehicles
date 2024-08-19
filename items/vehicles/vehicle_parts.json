@@ -22,5 +22,31 @@
     "color": "yellow",
     "material": [ "steel" ],
     "price": "12 kUSD"
+  },
+  {
+    "type": "GENERIC",
+    "id": "mana_paddles",
+    "name": { "str_sp": "mana oars" },
+    "description": "A pair of oars for a boat.  Being powered by magic, they paddle on their own.",
+    "weight": "8 kg",
+    "color": "light_gray",
+    "symbol": ":",
+    "material": [ "wood" ],
+    "volume": "16 L",
+    "category": "veh_parts",
+    "price": "90 USD",
+    "price_postapoc": "1 USD",
+    "melee_damage": { "bash": 18 }
+  },
+  {
+    "id": "1cyl_combustion_large_magic",
+    "copy-from": "engine_gasoline",
+    "type": "ENGINE",
+    "name": { "str": "magic 1-cylinder engine" },
+    "description": "A magically manifested combustion engine.  Despite operating entirely off of mana rather than fuel, it otherwise functions exactly as a cenventional high-compression, 200 cc single-cylinder 4-stroke combustion engine.",
+    "weight": "28 kg",
+    "volume": "42 L",
+    "price": "100 USD",
+    "price_postapoc": "12 USD 50 cent"
   }
 ]

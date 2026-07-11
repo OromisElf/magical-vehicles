@@ -1,6 +1,7 @@
 [
   {
-    "type": "GENERIC",
+    "type": "ITEM",
+    "subtypes": [ "ENGINE" ],
     "id": "i4_combustion_magic",
     "name": "magic I4 engine",
     "symbol": "v",
@@ -12,7 +13,8 @@
     "price": "16 kUSD"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
+    "subtypes": [ "ENGINE" ],
     "id": "v6_combustion_magic",
     "name": "magic V6 engine",
     "symbol": "v",
@@ -24,7 +26,8 @@
     "price": "12 kUSD"
   },
   {
-    "type": "GENERIC",
+    "type": "ITEM",
+    "subtypes": [ "ENGINE" ],
     "id": "mana_paddles",
     "name": { "str_sp": "mana oars" },
     "description": "A pair of oars for a boat.  Being powered by magic, they paddle on their own.",
@@ -41,7 +44,8 @@
   {
     "id": "1cyl_combustion_large_magic",
     "copy-from": "engine_gasoline",
-    "type": "ENGINE",
+    "type": "ITEM",
+    "subtypes": [ "ENGINE" ],
     "name": { "str": "magic 1-cylinder engine" },
     "description": "A magically manifested combustion engine.  Despite operating entirely off of mana rather than fuel, it otherwise functions exactly as a cenventional high-compression, 200 cc single-cylinder 4-stroke combustion engine.",
     "weight": "28 kg",

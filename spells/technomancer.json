@@ -7,31 +7,6 @@
     "learn_spells": { "summon_magic_comcycle": 10, "summon_magic_beetle": 20 }
   },
   {
-    "id": "summon_magic_comcycle",
-    "type": "SPELL",
-    "name": "Summon Co-op cycle",
-    "description": "A bigger ride for bigger loot. Or a second cowboy.",
-    "valid_targets": [ "ground" ],
-    "flags": [ "SOMATIC", "VERBAL", "CONCENTRATE" ],
-    "extra_effects": [ { "id": "eoc_summon_setup" } ],
-    "effect": "summon_vehicle",
-    "spell_class": "TECHNOMANCER",
-    "energy_source": "MANA",
-    "effect_str": "magic_comcycle",
-    "shape": "blast",
-    "difficulty": 6,
-    "max_level": 20,
-    "base_casting_time": 1250,
-    "base_energy_cost": { "math": [ "summoning_proficiency_negate_calculate(1000, 2)" ] },
-    "min_range": 1,
-    "max_range": 10,
-    "range_increment": 1,
-    "//": "40 minutes + 10 minutes / level; 4 hours at max level",
-    "min_duration": { "math": [ "summoning_proficiency_bonus_calculate(240000, 600)" ] },
-    "max_duration": { "math": [ "summoning_proficiency_bonus_calculate(1440000, 600)" ] },
-    "duration_increment": { "math": [ "summoning_proficiency_bonus_calculate(60000, 0.05)" ] }
-  },
-  {
     "id": "summon_magic_beetle",
     "type": "SPELL",
     "name": "Summon Magic Beetle",
@@ -47,14 +22,14 @@
     "difficulty": 7,
     "max_level": 20,
     "base_casting_time": 2000,
-    "base_energy_cost": { "math": [ "summoning_proficiency_negate_calculate(1100, 2)" ] },
+    "base_energy_cost": 1100,
     "min_range": 1,
     "max_range": 10,
     "range_increment": 1,
     "//": "40 minutes + 10 minutes / level; 4 hours at max level",
-    "min_duration": { "math": [ "summoning_proficiency_bonus_calculate(240000, 600)" ] },
-    "max_duration": { "math": [ "summoning_proficiency_bonus_calculate(1440000, 600)" ] },
-    "duration_increment": { "math": [ "summoning_proficiency_bonus_calculate(60000, 0.05)" ] },
+    "min_duration": 240000,
+    "max_duration": 1440000,
+    "duration_increment": 60000,
     "learn_spells": { "summon_magic_sedan": 10, "summon_magic_van": 20 }
   },
   {
@@ -73,14 +48,14 @@
     "difficulty": 7,
     "max_level": 20,
     "base_casting_time": 2000,
-    "base_energy_cost": { "math": [ "summoning_proficiency_negate_calculate(1300, 2)" ] },
+    "base_energy_cost": 1300,
     "min_range": 1,
     "max_range": 10,
     "range_increment": 1,
     "//": "40 minutes + 10 minutes / level; 4 hours at max level",
-    "min_duration": { "math": [ "summoning_proficiency_bonus_calculate(240000, 600)" ] },
-    "max_duration": { "math": [ "summoning_proficiency_bonus_calculate(1440000, 600)" ] },
-    "duration_increment": { "math": [ "summoning_proficiency_bonus_calculate(60000, 0.05)" ] }
+    "min_duration": 240000,
+    "max_duration": 1440000,
+    "duration_increment": 60000
   },
   {
     "id": "summon_magic_van",
@@ -98,14 +73,14 @@
     "difficulty": 7,
     "max_level": 20,
     "base_casting_time": 2500,
-    "base_energy_cost": { "math": [ "summoning_proficiency_negate_calculate(1500, 2)" ] },
+    "base_energy_cost": 1500,
     "min_range": 1,
     "max_range": 10,
     "range_increment": 1,
     "//": "40 minutes + 10 minutes / level; 4 hours at max level",
-    "min_duration": { "math": [ "summoning_proficiency_bonus_calculate(240000, 600)" ] },
-    "max_duration": { "math": [ "summoning_proficiency_bonus_calculate(1440000, 600)" ] },
-    "duration_increment": { "math": [ "summoning_proficiency_bonus_calculate(60000, 0.05)" ] }
+    "min_duration": 240000,
+    "max_duration": 1440000,
+    "duration_increment": 60000
   },
   {
     "id": "summon_magic_kayak",
@@ -123,14 +98,14 @@
     "difficulty": 5,
     "max_level": 10,
     "base_casting_time": 800,
-    "base_energy_cost": { "math": [ "summoning_proficiency_negate_calculate(800, 2)" ] },
+    "base_energy_cost": 800,
     "min_range": 1,
     "max_range": 10,
     "range_increment": 1,
     "//": "40 minutes + 20 minutes / level; 4 hours at max level",
-    "min_duration": { "math": [ "summoning_proficiency_bonus_calculate(240000, 600)" ] },
-    "max_duration": { "math": [ "summoning_proficiency_bonus_calculate(1440000, 600)" ] },
-    "duration_increment": { "math": [ "summoning_proficiency_bonus_calculate(120000, 0.1)" ] },
+    "min_duration": 240000,
+    "max_duration": 1440000,
+    "duration_increment": 120000,
     "learn_spells": { "summon_magic_rowboat": 10 }
   },
   {
@@ -149,14 +124,14 @@
     "difficulty": 6,
     "max_level": 10,
     "base_casting_time": 1200,
-    "base_energy_cost": { "math": [ "summoning_proficiency_negate_calculate(1200, 2)" ] },
+    "base_energy_cost": 1200,
     "min_range": 1,
     "max_range": 10,
     "range_increment": 1,
     "//": "40 minutes + 20 minutes / level; 4 hours at max level",
-    "min_duration": { "math": [ "summoning_proficiency_bonus_calculate(240000, 600)" ] },
-    "max_duration": { "math": [ "summoning_proficiency_bonus_calculate(1440000, 600)" ] },
-    "duration_increment": { "math": [ "summoning_proficiency_bonus_calculate(120000, 0.1)" ] }
+    "min_duration": 240000,
+    "max_duration": 1440000,
+    "duration_increment": 120000
   },
   {
     "id": "summon_magic_motorboat",
@@ -174,14 +149,14 @@
     "difficulty": 6,
     "max_level": 10,
     "base_casting_time": 1400,
-    "base_energy_cost": { "math": [ "summoning_proficiency_negate_calculate(1400, 2)" ] },
+    "base_energy_cost": 1400,
     "min_range": 1,
     "max_range": 10,
     "range_increment": 1,
     "//": "40 minutes + 20 minutes / level; 4 hours at max level",
-    "min_duration": { "math": [ "summoning_proficiency_bonus_calculate(240000, 600)" ] },
-    "max_duration": { "math": [ "summoning_proficiency_bonus_calculate(1440000, 600)" ] },
-    "duration_increment": { "math": [ "summoning_proficiency_bonus_calculate(120000, 0.1)" ] }
+    "min_duration": 240000,
+    "max_duration": 1440000,
+    "duration_increment": 120000
   },
   {
     "id": "summon_magic_amphitruck",
@@ -199,13 +174,13 @@
     "difficulty": 7,
     "max_level": 20,
     "base_casting_time": 3000,
-    "base_energy_cost": { "math": [ "summoning_proficiency_negate_calculate(1900, 2)" ] },
+    "base_energy_cost": 1900,
     "min_range": 1,
     "max_range": 10,
     "range_increment": 1,
     "//": "40 minutes + 10 minutes / level; 4 hours at max level",
-    "min_duration": { "math": [ "summoning_proficiency_bonus_calculate(240000, 600)" ] },
-    "max_duration": { "math": [ "summoning_proficiency_bonus_calculate(1440000, 600)" ] },
-    "duration_increment": { "math": [ "summoning_proficiency_bonus_calculate(60000, 0.05)" ] }
+    "min_duration": 240000,
+    "max_duration": 1440000,
+    "duration_increment": 60000
   }
 ]
